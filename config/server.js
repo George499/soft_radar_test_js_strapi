@@ -4,4 +4,9 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS", ["testKey1", "testKey2"]),
   },
+  "users-permissions": {
+    config: {
+      jwtSecret: env("CUSTOM_JWT_SECRET"),
+    },
+  },
 });
