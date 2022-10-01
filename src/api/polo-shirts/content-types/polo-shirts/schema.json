@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "polo_shirt",
+  "info": {
+    "singularName": "polo-shirts",
+    "pluralName": "polo-shirt",
+    "displayName": "Polo shirts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

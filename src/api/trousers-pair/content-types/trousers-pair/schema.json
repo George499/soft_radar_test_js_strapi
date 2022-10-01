@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trousers",
+  "info": {
+    "singularName": "trousers-pair",
+    "pluralName": "trousers",
+    "displayName": "Trousers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
