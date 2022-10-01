@@ -28,6 +28,12 @@
     },
     "price": {
       "type": "integer"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "polo_shirts"
     }
   }
 }
