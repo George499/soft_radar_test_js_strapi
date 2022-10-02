@@ -4,7 +4,8 @@
   "info": {
     "singularName": "trousers-pair",
     "pluralName": "trousers",
-    "displayName": "Trousers"
+    "displayName": "Trousers",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,20 +13,27 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"
     },
     "price": {
       "type": "integer"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "trousers"
     }
   }
 }
